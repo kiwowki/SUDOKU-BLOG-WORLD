@@ -1,7 +1,10 @@
-import { Inter } from "next/font/google";
-import "./globals.css";
+import "./globals.scss";
 
-const inter = Inter({ subsets: ["latin"] });
+import Header from "@/components/header/Header";
+import Footer from "@/components/footer/Footer";
+import { ThemeContextProvider } from "@/context/ThemeContext";
+import ThemeProvider from "@/provider/ThemeProvider";
+import AuthProvider from "@/provider/AuthProvider";
 
 export const metadata = {
   title: "Create Next App",
@@ -10,8 +13,23 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="ko">
+      <head>
+        <link rel="icon" href="/favicon.png" type="image/png" />
+      </head>
+      <body>
+        <AuthProvider>
+          {/* 전역변수로 감싸주기 */}
+          <ThemeContextProvider>
+            {/* 모든 페이지 감싸주기 */}
+            <ThemeProvider>
+              <Header />
+              {children}
+              <Footer />
+            </ThemeProvider>
+          </ThemeContextProvider>
+        </AuthProvider>
+      </body>
     </html>
   );
 }

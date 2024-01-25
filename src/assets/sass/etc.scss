@@ -1,0 +1,141 @@
+
+#header {
+    width: 100%;
+    height: 110px;
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 3px solid var(--black400);
+    .left {
+        width: 20%;
+        display: inline-block;
+        text-align: center;
+        font-family: var(--sans);
+        a{
+            em {
+                font-style: italic;
+                color: var(--black400);
+            }
+            
+        }
+    transition: transform 0.3s ease; /* 트랜지션 효과 설정 */
+
+    &:hover {
+        transform: translateX(-10px); /* Y축 방향으로 -5px만큼 이동 */
+        color: var(--yellow);
+    }
+    }
+    h1 {
+        position: relative;
+        font-family: var(--monb);
+
+        a {
+            width: 60%;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            
+        }
+    img {
+            width: 45px;
+            transition: transform 0.3s ease; /* 트랜지션 효과 설정 */
+
+    &:hover {
+        transform: translateX(5px); /* Y축 방향으로 -5px만큼 이동 */
+        
+    }
+        }
+
+    &::after {
+            position: absolute;
+            left: 0;
+            top: 0;
+            text-align: left;
+            display: inline-block;
+            content: "SUDOKU BLOG WORLD";
+            color: var(--red);
+            font-family: var(--monc);
+            z-index: 0;
+        
+        }
+
+    }
+    .right {
+        font-family: var(--sans);
+        width: 20%;
+        display: inline-block;
+        text-align: center;
+//        padding-right: 5vw;
+    transition: transform 0.3s ease; /* 트랜지션 효과 설정 */
+
+    &:hover {
+        transform: translateX(10px); /* Y축 방향으로 -5px만큼 이동 */
+        color: var(--yellow);
+    }
+        }
+    
+}
+#nav {
+    width: 100%;
+    height: 65px;
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    border-bottom: 3px solid var(--black400);
+    font-family: var(--sans);
+    .category {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+            padding: 0 20px
+            
+        }
+        em {
+            color: var(--red);
+        }
+    }
+}
+
+#footer {
+    width: 100%;
+    height: 110px;
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 3px solid var(--black400);
+padding: 0 50px;
+    
+    a {
+        font-family: var(--sans);
+        color: var(--black400);
+        &:hover {
+            color: var(--white)
+        }
+    }
+
+.dog {
+        img {
+            width: 50px;
+            transition: transform 0.3s ease; /* 트랜지션 효과 설정 */
+
+    &:hover {
+        transform: translateY(-5px); /* Y축 방향으로 -5px만큼 이동 */
+    }
+        }
+    }
+.heart {
+        img {
+            width: 30px;
+            transition: transform 0.3s ease; /* 트랜지션 효과 설정 */
+            &:hover {
+                transform: translateY(-5px); /* Y축 방향으로 -5px만큼 이동 */
+            }
+        } 
+    }
+}

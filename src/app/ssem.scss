@@ -1,0 +1,1157 @@
+@font-face {
+    font-family: "GmarketSans";
+    font-weight: 300;
+    font-style: normal;
+    src: url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.eot");
+    src: url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.eot?#iefix")
+            format("embedded-opentype"),
+        url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.woff2")
+            format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.woff")
+            format("woff"),
+        url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.ttf")
+            format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "GmarketSans";
+    font-weight: 500;
+    font-style: normal;
+    src: url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.eot");
+    src: url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.eot?#iefix")
+            format("embedded-opentype"),
+        url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.woff2")
+            format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.woff")
+            format("woff"),
+        url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansMedium.ttf")
+            format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "GmarketSans";
+    font-weight: 700;
+    font-style: normal;
+    src: url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.eot");
+    src: url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.eot?#iefix")
+            format("embedded-opentype"),
+        url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.woff2")
+            format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.woff")
+            format("woff"),
+        url("https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.ttf")
+            format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "NanumSquareNeo";
+    font-weight: 300;
+    font-style: normal;
+    src: url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-aLt.eot");
+    src: url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-aLt.eot?#iefix")
+            format("embedded-opentype"),
+        url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-aLt.woff2")
+            format("woff2"),
+        url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-aLt.woff")
+            format("woff"),
+        url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-aLt.ttf")
+            format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "NanumSquareNeo";
+    font-weight: 400;
+    font-style: normal;
+    src: url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-bRg.eot");
+    src: url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-bRg.eot?#iefix")
+            format("embedded-opentype"),
+        url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-bRg.woff2")
+            format("woff2"),
+        url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-bRg.woff")
+            format("woff"),
+        url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-bRg.ttf")
+            format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "NanumSquareNeo";
+    font-weight: 700;
+    font-style: normal;
+    src: url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-cBd.eot");
+    src: url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-cBd.eot?#iefix")
+            format("embedded-opentype"),
+        url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-cBd.woff2")
+            format("woff2"),
+        url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-cBd.woff")
+            format("woff"),
+        url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-cBd.ttf")
+            format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "NanumSquareNeo";
+    font-weight: 800;
+    font-style: normal;
+    src: url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-dEb.eot");
+    src: url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-dEb.eot?#iefix")
+            format("embedded-opentype"),
+        url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-dEb.woff2")
+            format("woff2"),
+        url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-dEb.woff")
+            format("woff"),
+        url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-dEb.ttf")
+            format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "NanumSquareNeo";
+    font-weight: 900;
+    font-style: normal;
+    src: url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-eHv.eot");
+    src: url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-eHv.eot?#iefix")
+            format("embedded-opentype"),
+        url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-eHv.woff2")
+            format("woff2"),
+        url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-eHv.woff")
+            format("woff"),
+        url("https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo-eHv.ttf")
+            format("truetype");
+    font-display: swap;
+}
+
+:root {
+    --black: #000;
+    --black100: #000;
+    --black200: #000;
+    --black300: #000;
+    --black400: #000;
+    --black500: #000;
+
+    --white: #fff;
+    --white100: #fff;
+    --white200: #fff;
+    --white300: #fff;
+    --white400: #fff;
+    --white500: #fff;
+
+    --fontNan: "NanumSquareNeo";
+    --fontGma: "GmarketSans";
+    --fontOrb: "Orbitron";
+
+    /* 기본 폰트 설정 */
+    font-family: var(--fontNan);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+
+    /* 아이폰 가로 모드에서 글씨 확대 금지 */
+    -webkit-text-size-adjust: 100%;
+}
+
+.container {
+    max-width: 1260px;
+    width: 96%;
+    margin: 0 auto;
+}
+
+.dark {
+    --black: #000;
+    --white: #fff;
+}
+
+.light {
+    --black: #fff;
+    --white: #000;
+}
+
+.none {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    :root {
+        font-size: 14px;
+    }
+}
+
+/* 여백 초기화 */
+body,
+div,
+dl,
+dd,
+dt,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+p,
+table,
+th,
+td,
+input,
+figure,
+figcaption,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+/* box-sizing 초기화 */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+/* 폰트 초기화 */
+body,
+button,
+input,
+select,
+table,
+textarea {
+    font-family: var(--fontNan), var(--fontGma), "AppleSDGothicNeo-Regular",
+        "Malgun Gothic", "맑은 고딕", "dotum", "돋움";
+}
+
+/* 링크 초기화 */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 목록 초기화 */
+li,
+ol,
+ul {
+    list-style: none;
+}
+
+/* 제목 초기화 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+/* 폰트 스타일 */
+em,
+address {
+    font-style: normal;
+}
+
+/* 이미지 초기화 */
+img {
+    width: 100%;
+    vertical-align: top;
+}
+
+/* 보더 초기화 */
+img,
+fieldset,
+button {
+    border: 0;
+}
+
+/* 테이블 초기화 */
+table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+/* 클리어픽스 */
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: block;
+    line-height: 0;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+/* 블라인드 효과 */
+.blind {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+/* ir 효과 */
+.ir {
+    display: block;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+.main__conts > h3 {
+    text-align: center;
+    font-family: "GmarketSans";
+    font-size: 1.4rem;
+    padding: 2rem 0 1rem;
+}
+
+// header
+#header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 90000;
+    background-color: var(--black);
+    border-bottom: 1px solid var(--white);
+
+    .header__logo {
+        color: var(--white);
+        padding: 1rem;
+        font-weight: 200;
+    }
+}
+
+.header__theme {
+    background-color: var(--white);
+    width: 40px;
+    height: 20px;
+    border-radius: 50px;
+    display: flex;
+    padding: 3px;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 1.125rem;
+
+    .ball {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: var(--black);
+        position: absolute;
+        top: 2px;
+        display: inline-block;
+        transition: all 0.3s;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+#main {
+    min-height: 85vh;
+}
+
+.main__header {
+    text-align: center;
+    background-color: var(--black);
+    border-bottom: 1px solid var(--white);
+    padding: 5.625rem 0;
+    margin-top: 57px;
+
+    > h2 {
+        font-size: 2.5rem;
+        line-height: 1;
+        color: var(--white);
+        margin-bottom: 1.25rem;
+    }
+
+    > p {
+        font-size: 1rem;
+        color: var(--white);
+        font-weight: 300;
+        font-family: "GmarketSans";
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+
+        li {
+            color: var(--white);
+
+            &:hover {
+                text-decoration: underline;
+                text-underline-position: under;
+            }
+        }
+    }
+
+    a {
+        color: var(--white);
+        padding-right: 10px;
+        font-weight: 300;
+        font-family: "GmarketSans";
+    }
+
+    span {
+        color: var(--white);
+        cursor: pointer;
+        font-family: "GmarketSans";
+        font-weight: 300;
+        padding: 5px;
+    }
+
+    @media (max-width: 800px) {
+        margin-top: 50px;
+    }
+}
+
+#footer {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 50px 100px 50px 100px;
+    border-top: 1px solid var(--white);
+}
+
+.join__inner {
+    width: 360px;
+    margin: 0 auto;
+    font-family: var(--fontNan);
+
+    .join__form {
+        div {
+            margin-bottom: 10px;
+        }
+    }
+
+    .join__add {
+        margin-top: 4rem;
+        position: relative;
+
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+
+            li {
+                width: 50px;
+                height: 50px;
+                display: inline-block;
+                border-radius: 50%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+
+                &:nth-child(1) {
+                    background-color: #fff;
+                    border: 1px solid #d9d9d9;
+                    background-image: url(/google.png);
+                    background-size: 50%;
+                }
+
+                &:nth-child(2) {
+                    border: 1px solid #d9d9d9;
+                    background-image: url(/github.png);
+                    background-size: 50%;
+                }
+
+                &:nth-child(3) {
+                    background-color: #03c70a;
+                }
+
+                &:nth-child(4) {
+                    background-color: #fee500;
+                }
+
+                &:nth-child(5) {
+                    background-color: #344d90;
+                }
+            }
+        }
+    }
+}
+
+.blog__category {
+    padding: 50px 0;
+
+    ul {
+        display: flex;
+        justify-content: center;
+
+        li {
+            a {
+                border: 1px solid var(--black);
+                padding: 10px 30px;
+                margin: 4px;
+
+                &:hover {
+                    background-color: var(--black);
+                    color: var(--white);
+                }
+            }
+        }
+    }
+}
+
+.blog__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: 1fr;
+    gap: 20px;
+    font-family: "NanumSquareNeo";
+}
+
+.blog__list .blog {
+    aspect-ratio: 1 / 1;
+    background-size: 100%;
+    background-position: center center;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #fff;
+    z-index: 10;
+    transition: all 0.3;
+    font-family: "NanumSquareNeo";
+}
+
+.blog__list .blog:nth-of-type(1) {
+    background-image: url("/blog-img01.jpg");
+}
+
+.blog__list .blog:nth-of-type(2) {
+    background-image: url("/blog-img02.jpg");
+}
+
+.blog__list .blog:nth-of-type(3) {
+    background-image: url("/blog-img03.jpg");
+}
+
+.blog__list .blog:nth-of-type(4) {
+    background-image: url("/blog-img04.jpg");
+}
+
+.blog__list .blog:nth-of-type(5) {
+    background-image: url("/blog-img05.jpg");
+}
+
+.blog__list .blog:nth-of-type(6) {
+    background-image: url("/blog-img06.jpg");
+}
+
+.blog__list .blog:nth-of-type(7) {
+    background-image: url("/blog-img07.jpg");
+}
+
+.blog__list .blog:nth-of-type(8) {
+    background-image: url("/blog-img08.jpg");
+}
+
+.blog__list .blog:nth-of-type(9) {
+    background-image: url("/blog-img09.jpg");
+}
+
+.blog__list .blog:nth-of-type(10) {
+    background-image: url("/blog-img10.jpg");
+}
+
+.blog__list .blog::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0.1) 50%
+    );
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    transition: all 0.2s;
+}
+
+.blog__list .blog::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+.blog__list .blog:hover::after {
+    opacity: 0.4;
+}
+
+.blog__list .blog .title {
+    font-size: 18px;
+    position: relative;
+    z-index: 100;
+}
+
+.blog__list .blog .desc {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    opacity: 0.5;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 100;
+}
+
+// .blog__list .blog:hover .desc {
+//   text-overflow: initial;
+//   white-space: initial;
+//   opacity: 0.7;
+// }
+
+.blog__list .blog .info {
+    font-size: 14px;
+    color: #fff;
+    position: relative;
+    z-index: 100;
+}
+
+.blog__list .blog .info .author {
+    padding-left: 28px;
+    position: relative;
+    padding-top: 4px;
+    margin-right: 10px;
+}
+
+.blog__list .blog .info .author::before {
+    content: "웹";
+    width: 22px;
+    height: 22px;
+    background-color: #c1468b;
+    color: #fff;
+    font-size: 10px;
+    line-height: 22px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+}
+
+.blog__list .blog .info .time {
+    opacity: 0.8;
+}
+
+.blog__list .blog .info .dot {
+    position: relative;
+    padding-left: 10px;
+}
+
+.blog__list .blog .info .dot::before {
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: 6px;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.blog__list .blog .info .view {
+    display: inline-block;
+    padding: 2px 5px 2px 20px;
+    position: relative;
+    font-size: 14px;
+}
+
+.blog__list .blog .info .view::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 14px;
+    height: 14px;
+    background-image: url("/eye_white.svg");
+    background-size: cover;
+    stroke: #fff;
+}
+
+.blog__list .blog .info .like {
+    display: inline-block;
+    padding: 2px 5px 2px 20px;
+    position: relative;
+    font-size: 14px;
+}
+
+.blog__list .blog .info .like::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 14px;
+    height: 14px;
+    background-image: url("/heart_white.svg");
+    background-size: cover;
+}
+
+.header__toggle {
+    background-color: var(--white);
+    width: 40px;
+    height: 20px;
+    border-radius: 50px;
+    padding: 3px;
+    display: flex;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 1.125rem;
+
+    .ball {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        position: absolute;
+        top: 2px;
+        // left: 2px;
+        display: inline-block;
+        transition: all 0.3s;
+        background-color: var(--black);
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.join__inner {
+    width: 360px;
+    margin: 0 auto;
+}
+
+.join__inner label {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+.join__inner input {
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: var(--namumFont);
+    color: #666;
+}
+
+.join__inner input::placeholder {
+    color: #666;
+    font-size: 14px;
+}
+
+.join__inner .msg {
+    font-size: 14px;
+    color: red;
+    margin: 5px 0 8px;
+    display: block;
+}
+
+.join__btn button {
+    font-size: 1rem;
+    background-color: var(--black);
+    color: var(--white);
+    width: 100%;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.join__add {
+    margin-top: 4rem;
+    position: relative;
+}
+
+.join__add::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -2rem;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+}
+
+.join__add .etc {
+    text-align: center;
+    color: #666;
+    margin-top: 1rem;
+}
+
+.join__add .etc a {
+    font-size: 14px;
+    color: #666;
+}
+
+.blog__page {
+    text-align: center;
+    margin: 50px 0;
+
+    ul {
+        display: flex;
+        justify-content: center;
+
+        li {
+            width: 20px;
+            height: 20px;
+            line-height: 18px;
+            border: 1px solid var(--black);
+            margin: 1px;
+            text-align: center;
+            font-size: 12px;
+            cursor: pointer;
+
+            &.active {
+                background-color: var(--black);
+                color: var(--white);
+            }
+        }
+    }
+}
+
+.blog__header {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+    font-family: "NanumSquareNeo";
+}
+
+.blog__header .header {
+    width: 50%;
+    height: calc((100vh - 70px));
+    background-color: #fffcdc;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 5%;
+}
+
+.blog__header .header .cate {
+    border: 1px solid #686868;
+    padding: 2px 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #282828;
+}
+
+.blog__header .header .title {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.blog__header .header .desc {
+    opacity: 0.7;
+    margin-bottom: 30px;
+}
+
+.blog__header .header .info .author {
+    padding-right: 10px;
+}
+
+.blog__header .header .info .time {
+    font-size: 12px;
+    opacity: 0.6;
+}
+
+.blog__header .img {
+    width: 50%;
+    background-color: #ddd;
+    background-image: url("https://storage.googleapis.com/pai-images/fd9044ce5ff24510bbc7e0663d83377a.jpeg");
+    background-size: cover;
+    background-position: center center;
+}
+
+/* blog__detail */
+.blog__detail {
+    padding: 100px 0;
+    font-family: "NanumSquareNeo";
+}
+
+.blog__detail .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #cccccc46;
+    margin-bottom: 3rem;
+    padding-top: 1.4rem;
+    position: sticky;
+    left: 0;
+    top: 60px;
+    background-color: #fff;
+}
+
+.blog__detail .info h4 {
+    display: inline-block;
+    margin-right: 1rem;
+    line-height: 1;
+}
+
+.blog__detail .info .author {
+    font-size: 14px;
+    color: #666;
+    margin-right: 0.5rem;
+}
+
+.blog__detail .info .view {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 2px 1rem 2px 2rem;
+    border-radius: 5px;
+    position: relative;
+    font-size: 12px;
+    color: #666;
+}
+
+.blog__detail .info .view::before {
+    content: "";
+    position: absolute;
+    left: 0.8rem;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    background-image: url(/eye.svg);
+    background-size: cover;
+}
+
+.blog__detail .info .like {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 2px 1rem 2px 2rem;
+    border-radius: 5px;
+    position: relative;
+    font-size: 12px;
+    color: #666;
+}
+
+.blog__detail .info .like::before {
+    content: "";
+    position: absolute;
+    left: 0.8rem;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    background-image: url("/heart.svg");
+    background-size: cover;
+}
+
+.blog__detail .info .share {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 2px 1rem 2px 2rem;
+    border-radius: 5px;
+    position: relative;
+    font-size: 12px;
+    color: #666;
+}
+
+.blog__detail .info .share::before {
+    content: "";
+    position: absolute;
+    left: 0.8rem;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    background-image: url("/share-2.svg");
+    background-size: cover;
+}
+
+.blog__detail .info .mark {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 2px 1rem 2px 2rem;
+    border-radius: 5px;
+    position: relative;
+    font-size: 12px;
+    color: #666;
+}
+
+.blog__detail .info .mark::before {
+    content: "";
+    position: absolute;
+    left: 0.8rem;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    background-image: url("/bookmark.svg");
+    background-size: cover;
+}
+
+.blog__detail h4 {
+    font-size: 30px;
+    margin-bottom: 1rem;
+}
+
+.blog__detail h5 {
+    font-size: 20px;
+    margin-bottom: 0.8rem;
+}
+
+.blog__detail p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 1.6rem;
+}
+
+.blog__detail figure {
+    padding: 1rem;
+    background-color: #cccccc30;
+    margin-bottom: 2rem;
+}
+
+.blog__detail figure img {
+    max-width: 600px;
+    margin: 0 auto;
+    display: block;
+}
+
+.blog__detail figcaption {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* blog__next */
+.blog__next {
+    border-top: 1px solid #cccccc84;
+    border-bottom: 1px solid #cccccc84;
+    padding: 30px 0;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.blog__next::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 0;
+    top: 34px;
+    background-image: url("/chevron-left.svg");
+    background-size: cover;
+}
+
+.blog__next::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 0;
+    top: 34px;
+    background-image: url("/chevron-right.svg");
+    background-size: cover;
+}
+
+.blog__next a {
+    color: #666;
+}
+
+.blog__next a:hover {
+    color: #000;
+}
+
+/* blog__relate */
+.blog__relate > h4 {
+    border-bottom: 1px solid #cccccc84;
+    padding-bottom: 10px;
+    border-top: 2px solid #cccccc84;
+    border-bottom: 1px dashed #cccccc84;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+/* blog__comment */
+.blog__comment {
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.blog__comment > h4 {
+    border-bottom: 1px solid #cccccc84;
+    padding-bottom: 10px;
+    border-top: 2px solid #cccccc84;
+    border-bottom: 1px dashed #cccccc84;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 1260px) {
+    .blog__header .header {
+        width: 100%;
+        position: relative;
+        z-index: 1000;
+        background: #00000036;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        height: auto;
+        color: #fff;
+        padding: 8% 10%;
+    }
+
+    .blog__header .header .cate {
+        color: #fff;
+        border: 1px solid #a4a4a4;
+    }
+
+    .blog__header .img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 960px) {
+    .blog__header .header .title {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .blog__header .header {
+        padding: 50px 20px;
+    }
+}

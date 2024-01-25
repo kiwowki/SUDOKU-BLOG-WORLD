@@ -1,0 +1,686 @@
+body {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+// 100 thin
+// 200 ExtraLight
+// 300 Light
+// 400 Regular
+// 500 Medium
+// 600 SemiBold
+// 700 Bold
+// 800 ExtraBold
+// 900 Black
+
+// Dela Gothic One, Marcellus, Shrikhand
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Marcellus&family=Shrikhand&display=swap");
+// Montserrat
+@import url("https://webfontworld.github.io/Montserrat/Montserrat.css");
+
+// undertail fonts
+@font-face {
+    font-family: "MonsterFriend2Back";
+    src: url("../assets/font/MonsterFriend2Back.woff2") format("woff2"); /* WOFF2 형식 */
+}
+@font-face {
+    font-family: "MonsterFriend2Center";
+    src: url("../assets/font/MonsterFriend2Center.woff2") format("woff2"); /* WOFF2 형식 */
+}
+@font-face {
+    font-family: "MonsterFriend2Fore";
+    src: url("../assets/font/MonsterFriend2Fore.woff2") format("woff2"); /* WOFF2 형식 */
+}
+@font-face {
+    font-family: "DeterminationMonoWeb";
+    src: url("../assets/font/DeterminationMonoWeb.woff") format("woff"); /* WOFF 형식 */
+}
+@font-face {
+    font-family: "DeterminationSansWeb";
+    src: url("../assets/font/DeterminationSansWeb.woff") format("woff"); /* WOFF 형식 */
+}
+@font-face {
+    font-family: "DeterminationMonoK2";
+    src: url("/font/DeterminationMonoK2.woff2") format("woff2"); /* WOFF 형식 */
+}
+@font-face {
+    font-family: "DeterminationSansK2";
+    src: url("/font/DeterminationSansK2.woff") format("woff"); /* WOFF 형식 */
+    unicode-range: U+AC00-D7AF;
+}
+
+/* MapoGoldenPier */
+@font-face {
+    font-family: "MapoGoldenPier";
+    font-weight: normal;
+    font-style: normal;
+    src: url("https://cdn.jsdelivr.net/gh/webfontworld/mapo/MapoGoldenPier.eot");
+    src: url("https://cdn.jsdelivr.net/gh/webfontworld/mapo/MapoGoldenPier.eot?#iefix")
+            format("embedded-opentype"),
+        url("https://cdn.jsdelivr.net/gh/webfontworld/mapo/MapoGoldenPier.woff2")
+            format("woff2"),
+        url("https://cdn.jsdelivr.net/gh/webfontworld/mapo/MapoGoldenPier.woff")
+            format("woff"),
+        url("https://cdn.jsdelivr.net/gh/webfontworld/mapo/MapoGoldenPier.ttf")
+            format("truetype");
+    font-display: swap;
+}
+
+:root {
+    --dela: "Dela Gothic One";
+    --marc: "Marcellus";
+    --shrik: "Shrikhand";
+    --monb: "MonsterFriend2Back";
+    --monc: "MonsterFriend2Center";
+    --monf: "MonsterFriend2Fore";
+    --mono: "DeterminationMonoWeb";
+    --monok: "DeterminationMonoK2";
+    --sans: "DeterminationSansWeb";
+    --sansk: "DeterminationSansK2";
+
+    --mainfont-nanum: "nanumSquareNeo";
+    --mainfont-nexon: "nexonLv1";
+    --mapo: "MapoGoldenPier";
+    --hahm: "Hahmlet";
+    --oswald: "Oswald";
+
+    --black: #000;
+    --black100: #0f0f0f;
+    --black200: #1f1f1f;
+    --black300: #3d3d3d;
+    --black400: #aaaaaa;
+    --black500: #dbdbdb;
+
+    --white: #fff;
+
+    --yellow: #ffeb00;
+    --yellow100: #ffea00ce;
+    --yellow200: #ffea009d;
+    --yellow300: #ffeb002b;
+
+    --red: #ff0000;
+
+    --blue: #00BEFF;
+
+    // 폰트 셋팅
+    font-family: var(--sans), var(--sansk);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+
+    // 폰트 최적화
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+
+    @media (max-width: 800px) {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+}
+
+// border-box 초기화
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+// 공백 초기화
+body,
+button,
+dd,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+legend,
+li,
+ol,
+p,
+select,
+table,
+td,
+textarea,
+th,
+ul,
+figure,
+figcaption {
+    margin: 0;
+    padding: 0;
+}
+
+// 폰트 초기화
+body,
+button,
+input,
+select,
+table,
+textarea {
+    font-family: var(--mainfont-nanum), var(--mainfont-nexon),
+        "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", helvetica,
+        sans-serif;
+}
+
+// 링크 초기화
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+}
+
+// 스타일 초기화
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+ul {
+    list-style: none;
+}
+
+em,
+address {
+    font-style: normal;
+}
+
+strong {
+    font-weight: normal;
+}
+
+img {
+    vertical-align: top;
+    width: 100%;
+}
+
+// 디자인 초기화
+input,
+textarea,
+button,
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    font-size: 16px;
+    border: 0;
+}
+
+// 스킵메뉴
+#skip a {
+    position: absolute;
+    left: 10px;
+    top: -92px;
+    z-index: 100000;
+    font-size: 1rem;
+    padding: 10px 30px;
+    color: var(--white);
+    background: var(--black);
+}
+#skip a:focus,
+#skip a:active {
+    top: 10px;
+}
+
+// 글씨 숨기기
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+// IR(Image Replacement)
+// 의미가 포함되어 있는 image를 배경으로 표현하고, 텍스트는 보이지 않게 설정하는 방법입니다.
+.ir {
+    display: block;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+    white-space: nowrap;
+}
+
+.containter {
+    max-width: 1260px;
+    width: 96%;
+    margin: 0 auto;
+}
+
+.dark {
+    --black: #000;
+    --white: #fff;
+}
+
+.light {
+    --black: #fff;
+    --white: #000;
+}
+
+.header_theme {
+    background-color: var(--white);
+    width: 40px;
+    height: 20px;
+    border-radius: 50px;
+    padding: 3px;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    // top: 1.125rem;
+    display: flex;
+
+    .ball {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        position: absolute;
+        top: 2px;
+        display: inline-block;
+        transition: all 0.3s;
+        background-color: var(--black);
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+#header {
+    width: 100%;
+    height: 110px;
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 3px solid var(--black400);
+    .left {
+        width: 20%;
+        display: inline-block;
+        text-align: center;
+        font-family: var(--sans);
+        a {
+            em {
+                font-style: italic;
+                color: var(--black400);
+            }
+        }
+        transition: transform 0.3s ease; /* 트랜지션 효과 설정 */
+
+        &:hover {
+            transform: translateX(-10px); /* Y축 방향으로 -5px만큼 이동 */
+            color: var(--yellow);
+        }
+    }
+    h1 {
+        position: relative;
+        font-family: var(--monb);
+
+        @media (max-width: 920px) {
+            font-size: 20px;
+        }
+
+        a {
+            width: 60%;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        img {
+            width: 45px;
+            transition: transform 0.3s ease; /* 트랜지션 효과 설정 */
+
+            &:hover {
+                transform: translateX(5px); /* Y축 방향으로 -5px만큼 이동 */
+            }
+            @media (max-width: 920px) {
+                width: 30px;
+            }
+        }
+
+        &::after {
+            position: absolute;
+            left: 0;
+            top: 0;
+            text-align: left;
+            display: inline-block;
+            content: "SUDOKU BLOG WORLD";
+            color: var(--red);
+            font-family: var(--monc);
+            z-index: 0;
+        }
+    }
+    .right {
+        font-family: var(--sans);
+        width: 20%;
+        display: inline-block;
+        text-align: center;
+        //        padding-right: 5vw;
+        transition: transform 0.3s ease; /* 트랜지션 효과 설정 */
+
+        &:hover {
+            transform: translateX(10px); /* Y축 방향으로 -5px만큼 이동 */
+            color: var(--yellow);
+        }
+    }
+}
+
+#main {
+    width: 100%;
+    min-height: 100vh;
+    color: var(--white);
+    background-color: var(--black);
+    font-family: var(--monok);
+
+    .main_header {
+        width: 100%;
+        height: 300px;
+        background-color: var(--black);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-bottom: 3px solid var(--black400);
+        h2 {
+            font-size: 32px;
+            font-family: var(--monb);
+            padding: 40px;
+        }
+        ul {
+            display: flex;
+            padding: 20px;
+
+            li {
+                padding: 20px;
+                font-family: var(--mono);
+                font-size: 1rem;
+                cursor: pointer;
+                span {
+                    font-size: 0.8rem;
+                }
+                .yellow {
+                    color: var(--yellow);
+                    &:hover {
+                        color: var(--yellow100);
+                    }
+                }
+                // &:nth-child(2) {
+
+                // }
+            }
+        }
+        p {
+            font-family: var(--sansk);
+        }
+    }
+    .main_conts {
+        width: 100%;
+        // max-width: 400px;
+        margin: auto;
+        padding: 50px 20px;
+        box-sizing: border-box;
+
+        h3 {
+            text-align: center;
+            padding-bottom: 10px;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .join_inner {
+            // background-color: var(--white);
+
+            .join_form {
+                padding-bottom: 40px;
+
+                form {
+                    text-align: left;
+
+                    fieldset {
+                        border: none;
+
+                        legend {
+                            display: none;
+                        }
+                    }
+
+                    // label {
+                    //     display: block;
+                    //     margin-bottom: 8px;
+                    //     color: #333;
+                    // }
+
+                    input {
+                        width: 100%;
+                        padding: 8px;
+                        margin-bottom: 16px;
+                        border: 1px solid var(--white);
+                        border-radius: 4px;
+                        background-color: var(--black);
+                    }
+
+                    .join_btn {
+                        button {
+                            width: 100%;
+                            padding: 10px;
+                            background-color: var(--yellow);
+                            color: var(--black);
+                            border: none;
+                            border-radius: 4px;
+                            cursor: pointer;
+
+                            &:hover {
+                                background-color: var(--yellow300);
+                                color: var(--white);
+                            }
+                        }
+                    }
+                }
+            }
+
+            // .join_add {
+            //     padding-top: 10px;
+            //     text-align: center;
+            //     color: var(--white);
+            //     border-top: 2px solid var(--black500);
+
+            //     .google,
+            //     .github,
+            //     .naver,
+            //     .kakao {
+            //         margin: 10px 0;
+            //         padding: 10px;
+            //         border: 1px solid var(--white);
+            //         border-radius: 4px;
+            //         cursor: pointer;
+            //         color: var(--white);
+
+            //         &:hover {
+            //             background-color: var(--white);
+            //             color: var(--black);
+            //         }
+            //     }
+            //     .google {
+            //         border: 1px solid blue;
+            //     }
+            //     .github {
+            //         border: 1px solid var(--white);
+            //     }
+            //     .naver {
+            //         border: 1px solid green;
+            //     }
+            //     .kakao {
+            //         border: 1px solid yellow;
+            //     }
+            // }
+            .join__add {
+                margin-top: 4rem;
+                position: relative;
+
+                ul {
+                    display: flex;
+                    justify-content: space-evenly;
+
+                    li {
+                        width: 50px;
+                        height: 50px;
+                        display: inline-block;
+                        border-radius: 50%;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+
+                        &:nth-child(1) {
+                            background-color: #fff;
+                            border: 1px solid #d9d9d9;
+                            background-image: url(/google.png);
+                            background-size: 50%;
+                        }
+
+                        &:nth-child(2) {
+                            border: 1px solid #d9d9d9;
+                            background-image: url(/github.png);
+                            background-size: 50%;
+                        }
+
+                        &:nth-child(3) {
+                            background-color: #03c70a;
+                        }
+
+                        &:nth-child(4) {
+                            background-color: #fee500;
+                        }
+
+                        &:nth-child(5) {
+                            background-color: #344d90;
+                        }
+                    }
+                }
+            }
+        }
+        .blog_category {
+            width: 100%;
+            font-family: var(--mono);
+            font-size: 1.5rem;
+            ul {
+                display: flex;
+                justify-content: center;
+                padding: 0px;
+                li {
+                    padding: 0 40px;
+                    a {
+                        border-bottom: 3px solid var(--black400);
+                        padding-bottom: 5px;
+                        &:hover {
+                            color: var(--yellow);
+                        }
+                    }
+                }
+            }
+        }
+        .card_list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+
+            .list {
+                border: 1px solid var(--black400);
+                padding: 5vw;
+                width: 100%;
+                height: 60vh;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                margin: 10vh 15vw;
+                position: relative;
+                display: flex;
+
+                &::before {
+                    position: absolute;
+                    content: " ";
+                    width: 100%;
+                    left: 0;
+                    bottom: 20%;
+                    border: 1px solid var(--black400);
+                    z-index: -1;
+                }
+
+                .blog_left {
+                    width: 40%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    .cate {
+                        display: inline-block;
+                        padding: 5px 10px;
+                        border: 1px solid var(--yellow);
+                        color: var(--yellow);
+                        border-radius: 5px;
+                        margin-bottom: 10px;
+                        font-family: var(--monok);
+                    }
+
+                    .title {
+                        font-size: 1.5rem;
+                        margin-bottom: 10px;
+                        text-align: left;
+                    }
+
+                    .desc {
+                        font-size: 1rem;
+                        margin-bottom: 10px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+
+                    .auth {
+                        color: var(--white);
+                        text-align: right;
+                    }
+                }
+                .img {
+                    width: 60%;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    img {
+                        width: 80%;
+                    }
+                }
+            }
+        }
+        .blog_write {
+            button {
+                z-index: 1000;
+            }
+        }
+    }
+}
+
+#footer {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
