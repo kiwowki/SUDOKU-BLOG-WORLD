@@ -18,7 +18,7 @@ body {
 // Montserrat
 @import url("https://webfontworld.github.io/Montserrat/Montserrat.css");
 
-// undertail fonts
+// undertale fonts
 @font-face {
     font-family: "MonsterFriend2Back";
     src: url("../assets/font/MonsterFriend2Back.woff2") format("woff2"); /* WOFF2 형식 */
@@ -48,6 +48,17 @@ body {
     src: url("/font/DeterminationSansK2.woff") format("woff"); /* WOFF 형식 */
     unicode-range: U+AC00-D7AF;
 }
+@font-face {
+    font-family: "MERCY";
+    src: url("../assets/font/MERCY.woff") format("woff"); /* WOFF 형식 */
+}
+
+// MERCY 아이콘 변환
+// @ = Double Sans
+// & = Mercy Icon
+// # = Fight Icon
+// $ = Act Icon
+// % = Item Icon
 
 /* MapoGoldenPier */
 @font-face {
@@ -77,6 +88,7 @@ body {
     --monok: "DeterminationMonoK2";
     --sans: "DeterminationSansWeb";
     --sansk: "DeterminationSansK2";
+    --button: "MERCY";
 
     --mainfont-nanum: "nanumSquareNeo";
     --mainfont-nexon: "nexonLv1";
@@ -90,17 +102,24 @@ body {
     --black300: #3d3d3d;
     --black400: #aaaaaa;
     --black500: #dbdbdb;
+    --black600: #fdfdfd; // line // light테마에서는 black300색으로 변환
 
     --white: #fff;
 
-    --yellow: #ffeb00;
-    --yellow100: #ffea00ce;
-    --yellow200: #ffea009d;
+    --yellow: #ffff00;
+    --yellow100: #ffff00ce;
+    --yellow200: #ffff009d;
     --yellow300: #ffeb002b;
+    --yellow400: #a59700;
 
-    --red: #ff0000;
+    --red: #fe0000; // bottom line
+    --red100: #992b2b;
+    --red200: #4d0000;
+    --red300: #150000;
 
-    --blue: #00BEFF;
+    --blue: #00beff;
+
+    --orange: #ff7f27;
 
     // 폰트 셋팅
     font-family: var(--sans), var(--sansk);
@@ -118,6 +137,56 @@ body {
     @media (max-width: 800px) {
         font-size: 14px;
         line-height: 1.4;
+    }
+}
+
+// 구분선 : white + black + white
+// 박스 : border: solid 5px var(--black600);
+// 카테 언더라인
+.ex {
+    position: relative;
+    z-index: 2;
+    border-bottom: 2px solid var(--red100);
+    padding-bottom: 5px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: 1px;
+        width: 100%;
+        height: 5px;
+        bottom: -7px;
+        left: 0;
+        border-bottom: 5px solid var(--red300);
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        bottom: 0px;
+        left: 0;
+        border-bottom: 2px solid var(--red200);
+    }
+
+    &:hover {
+        color: var(--yellow);
+    }
+}
+// 빨간 언더라인(2줄)
+.ex {
+    border-bottom: 1px solid var(--red100);
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        bottom: 0px;
+        left: 0;
+        border-bottom: 1px solid var(--red200);
+        transition: width 0.3s;
     }
 }
 
@@ -220,6 +289,7 @@ select {
     border-radius: 0;
     font-size: 16px;
     border: 0;
+    outline: none; /* 포커스 효과 제거 */
 }
 
 // 스킵메뉴
@@ -262,7 +332,7 @@ select {
     white-space: nowrap;
 }
 
-.containter {
+.container {
     max-width: 1260px;
     width: 96%;
     margin: 0 auto;
@@ -276,6 +346,11 @@ select {
 .light {
     --black: #fff;
     --white: #000;
+    --yellow: #ebd700;
+    --red300: #fff;
+    --black600: #3d3d3d;
+    --red100: #fe0000;
+    --red200: #992b2b;
 }
 
 .header_theme {
@@ -315,7 +390,28 @@ select {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border-bottom: 3px solid var(--black400);
+    border-bottom: 3px solid var(--white);
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: 1px;
+        width: 100%;
+        height: 5px;
+        bottom: -1px;
+        left: 0;
+        border-bottom: 5px solid var(--black);
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        bottom: 0px;
+        left: 0;
+        border-bottom: 2px solid var(--white);
+    }
     .left {
         width: 20%;
         display: inline-block;
@@ -326,17 +422,20 @@ select {
                 font-style: italic;
                 color: var(--black400);
             }
+            &:hover {
+                color: var(--yellow);
+            }
         }
         transition: transform 0.3s ease; /* 트랜지션 효과 설정 */
 
         &:hover {
             transform: translateX(-10px); /* Y축 방향으로 -5px만큼 이동 */
-            color: var(--yellow);
         }
     }
     h1 {
         position: relative;
         font-family: var(--monb);
+        transition: all 0.3s;
 
         @media (max-width: 920px) {
             font-size: 20px;
@@ -353,7 +452,7 @@ select {
             transition: transform 0.3s ease; /* 트랜지션 효과 설정 */
 
             &:hover {
-                transform: translateX(5px); /* Y축 방향으로 -5px만큼 이동 */
+                transform: translateY(-5px); /* Y축 방향으로 -5px만큼 이동 */
             }
             @media (max-width: 920px) {
                 width: 30px;
@@ -371,6 +470,9 @@ select {
             font-family: var(--monc);
             z-index: 0;
         }
+        &:hover {
+            color: var(--blue);
+        }
     }
     .right {
         font-family: var(--sans);
@@ -382,27 +484,55 @@ select {
 
         &:hover {
             transform: translateX(10px); /* Y축 방향으로 -5px만큼 이동 */
-            color: var(--yellow);
+        }
+
+        a {
+            &:hover {
+                color: var(--yellow);
+            }
         }
     }
 }
 
 #main {
+    font-family: var(--mono);
     width: 100%;
     min-height: 100vh;
     color: var(--white);
     background-color: var(--black);
-    font-family: var(--monok);
 
     .main_header {
         width: 100%;
         height: 300px;
-        background-color: var(--black);
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        border-bottom: 3px solid var(--black400);
+        background-color: var(--black);
+        border-bottom: 3px solid var(--white);
+        font-family: var(--sans);
+        text-transform: uppercase;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            z-index: 1px;
+            width: 100%;
+            height: 5px;
+            bottom: -1px;
+            left: 0;
+            border-bottom: 5px solid var(--black);
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 5px;
+            bottom: 0px;
+            left: 0;
+            border-bottom: 2px solid var(--white);
+        }
         h2 {
             font-size: 32px;
             font-family: var(--monb);
@@ -416,14 +546,27 @@ select {
                 padding: 20px;
                 font-family: var(--mono);
                 font-size: 1rem;
-                cursor: pointer;
+
+                .user_welcome {
+                    cursor: default;
+                    em {
+                        color: var(--blue);
+                    }
+                    &:hover {
+                        color: var(--white);
+                    }
+                }
                 span {
+                    cursor: pointer;
                     font-size: 0.8rem;
+                    &:hover {
+                        color: var(--yellow);
+                    }
                 }
                 .yellow {
-                    color: var(--yellow);
+                    color: var(--blue);
                     &:hover {
-                        color: var(--yellow100);
+                        color: var(--yellow);
                     }
                 }
                 // &:nth-child(2) {
@@ -433,6 +576,9 @@ select {
         }
         p {
             font-family: var(--sansk);
+            &:hover {
+                // color: var(--yellow);
+            }
         }
     }
     .main_conts {
@@ -584,6 +730,7 @@ select {
             width: 100%;
             font-family: var(--mono);
             font-size: 1.5rem;
+            text-transform: uppercase;
             ul {
                 display: flex;
                 justify-content: center;
@@ -591,13 +738,65 @@ select {
                 li {
                     padding: 0 40px;
                     a {
-                        border-bottom: 3px solid var(--black400);
+                        width: 0;
+                        position: relative;
+                        z-index: 2;
+                        border-bottom: 1px solid var(--red100);
                         padding-bottom: 5px;
+                        box-sizing: border-box;
+                        transition: width 0.3s;
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            z-index: 1px;
+                            width: 0%;
+                            height: 5px;
+                            bottom: -4px;
+                            left: 0;
+                            border-bottom: 3px solid var(--red300);
+                            transition: width 0.3s;
+                            &:hover {
+                                width: 100%;
+                            }
+                        }
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            width: 0%;
+                            height: 5px;
+                            bottom: 0px;
+                            left: 0;
+                            border-bottom: 2px solid var(--red200);
+                            transition: width 0.3s;
+                            &:hover {
+                                width: 100%;
+                            }
+                        }
+
                         &:hover {
+                            width: 100%;
                             color: var(--yellow);
+                            &::after,
+                            &::before {
+                                width: 100%;
+                            }
                         }
                     }
                 }
+            }
+        }
+        .no_post {
+            display: flex;
+            padding-top: 50px;
+            flex-direction: column;
+            align-items: center;
+            p {
+                text-align: center;
+            }
+            img {
+                padding-top: 50px;
+                width: 100px;
             }
         }
         .card_list {
@@ -606,11 +805,10 @@ select {
             gap: 20px;
 
             .list {
-                border: 1px solid var(--black400);
-                padding: 5vw;
+                border: solid 5px var(--black600);
+                padding: 3vw;
                 width: 100%;
                 height: 60vh;
-                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
                 margin: 10vh 15vw;
                 position: relative;
                 display: flex;
@@ -621,29 +819,84 @@ select {
                     width: 100%;
                     left: 0;
                     bottom: 20%;
-                    border: 1px solid var(--black400);
+                    border: solid 5px var(--black600);
                     z-index: -1;
                 }
 
                 .blog_left {
-                    width: 40%;
+                    width: 50%;
                     height: 100%;
                     display: flex;
                     flex-direction: column;
+                    border-right: 2px solid var(--white);
+                    position: relative;
+                    padding-right: 5%;
+                    font-family: var(--sans);
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        z-index: 1px;
+                        height: 100%;
+                        right: -1px;
+                        top: 0;
+                        border-right: 5px solid var(--black);
+                    }
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        height: 100%;
+                        right: 0px;
+                        top: 0;
+                        border-right: 1px solid var(--white);
+                    }
                     .cate {
                         display: inline-block;
-                        padding: 5px 10px;
-                        border: 1px solid var(--yellow);
-                        color: var(--yellow);
+                        color: var(--blue);
                         border-radius: 5px;
-                        margin-bottom: 10px;
-                        font-family: var(--monok);
+                        margin-bottom: 15px;
+                        font-family: var(--mono);
+                        font-size: 1.7rem;
+                        text-transform: uppercase;
+                        a {
+                            position: relative;
+                            padding-left: 30px;
+
+                            &::after {
+                                content: "";
+                                background-image: url("/img/heart.png");
+                                position: absolute;
+                                width: 1rem;
+                                height: 1rem;
+                                top: 6px;
+                                left: 0;
+                                background-repeat: no-repeat;
+                                background-position: center center;
+                                background-size: cover;
+                            }
+                        }
                     }
 
                     .title {
                         font-size: 1.5rem;
-                        margin-bottom: 10px;
+                        margin-bottom: 20px;
                         text-align: left;
+                        padding-bottom: 5px;
+                        box-sizing: border-box;
+                        transition: width 0.3s;
+                        border-bottom: 1px solid var(--red100);
+                        position: relative;
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            width: 100%;
+                            height: 5px;
+                            bottom: 0px;
+                            left: 0;
+                            border-bottom: 1px solid var(--red200);
+                            transition: width 0.3s;
+                        }
                     }
 
                     .desc {
@@ -659,7 +912,7 @@ select {
                     }
                 }
                 .img {
-                    width: 60%;
+                    width: 50%;
                     display: flex;
                     justify-content: flex-end;
                     align-items: center;
@@ -670,8 +923,63 @@ select {
             }
         }
         .blog_write {
-            button {
-                z-index: 1000;
+            width: 100%;
+            .write_top {
+                width: 100%;
+                margin-bottom: 20px;
+
+                .title {
+                    width: 50%;
+                    padding: 10px;
+                    background-color: var(--black);
+                    border: 2px solid var(--black600);
+                    color: var(--white);
+                }
+                input {
+                }
+                select {
+                    padding: 10px;
+                    margin: 0 10px;
+                    background-color: var(--black);
+                    border: 2px solid var(--black600);
+                    color: var(--white);
+
+                    -webkit-appearance: auto;
+                    -moz-appearance: auto;
+                    option {
+                        padding: 10px;
+                        &:checked {
+                            // background-color: #f0f0f0; /* 호버 시 배경색 변경 */
+                            // color: #333; /* 호버 시 글자색 변경 */
+                        }
+                    }
+                }
+            }
+
+            .write_bot {
+                display: flex;
+                justify-content: flex-end;
+                button {
+                    margin-top: 10px;
+                    font-size: 1.5rem;
+                    padding: 2px 5px;
+                    border: 1px solid var(--orange);
+                    background-color: transparent;
+                    color: var(--orange);
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    font-family: var(--button);
+                    letter-spacing: -4px;
+
+                    img {
+                        margin-right: 5px;
+                    }
+                    &:hover {
+                        border: 1px solid var(--yellow);
+                        color: var(--yellow);
+                    }
+                }
             }
         }
     }
@@ -679,8 +987,44 @@ select {
 
 #footer {
     width: 100%;
-    height: 70px;
+    height: 110px;
+    background-color: var(--black);
+    color: var(--white);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    border-top: 3px solid var(--black400);
+    padding: 0 50px;
+
+    a {
+        font-family: var(--sans);
+        color: var(--black400);
+        &:hover {
+            color: var(--white);
+        }
+    }
+
+    .dog {
+        img {
+            width: 50px;
+            transition: transform 0.3s ease; /* 트랜지션 효과 설정 */
+
+            &:hover {
+                transform: translateY(-5px); /* Y축 방향으로 -5px만큼 이동 */
+            }
+        }
+    }
+    .heart {
+        img {
+            width: 30px;
+            transition: transform 0.3s ease; /* 트랜지션 효과 설정 */
+            &:hover {
+                transform: translateY(-5px); /* Y축 방향으로 -5px만큼 이동 */
+            }
+        }
+    }
+}
+
+.ql-editor {
+    height: 60vh !important;
 }

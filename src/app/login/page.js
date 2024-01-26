@@ -34,10 +34,9 @@ export default function page() {
           <div className="join__add">
             <ul>
               <li className="google" onClick={() => signIn("google")}><span className='ir'>google</span> </li>
-              <li className="github"><span className='ir'>Github</span></li>
-              <li className="naver"><span className='ir'>naver</span></li>
-              <li className="kakao"><span className='ir'>kakao</span></li>
-              <li className="facebook"><span className='ir'>Facebook</span></li>
+              <li className="github" onClick={() => signIn("github")}><span className='ir'>Github</span></li>
+              <li className="naver" onClick={() => signIn("naver")}><span className='ir'>naver</span></li>
+              <li className="kakao" onClick={() => signIn("kakao")}><span className='ir'>kakao</span></li>
             </ul>
           </div>
         </div>

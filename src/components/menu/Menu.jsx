@@ -13,7 +13,7 @@ export default function Menu() {
     // useSession의 데이터 불러오기
     const { data: session, status } = useSession();
 
-    if (status === " loading") {
+    if (status === "loading") {
         return <div className="loading">로딩 중입니다...</div>;
     }
 
@@ -22,7 +22,7 @@ export default function Menu() {
             {status === "authenticated" ? (
                 <>
                     <li>
-                        <span>{session.user.name}님 어서오세요!</span>
+                        <span className="user_welcome"><em>{session.user.name}</em>님 어서오세요!</span>
                     </li>
                     <li>
                         <span className="logout" onClick={() => signOut()}>
@@ -39,7 +39,7 @@ export default function Menu() {
                         <Link href="/notice" className="yellow">notice</Link>
                     </li>
                     <li>
-                        <Link href="/noticeWite"><span>notice wite</span></Link>
+                        <Link href="/noticeWite"><span>notice write</span></Link>
                     </li>
                 </>
             ) : (

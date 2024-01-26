@@ -1,5 +1,5 @@
 import Comments from '@/components/comments/Comments';
-import Menu from '@/components/menu/Menu'
+// import Menu from '@/components/menu/Menu'
 import Image from 'next/image';
 import React from 'react'
 const getData = async (slug) => {
@@ -14,11 +14,12 @@ const getData = async (slug) => {
 export default async function page({ params }) {
     const { slug } = params;
     const data = await getData(slug);
+
     // console.log(data)
     return (
         <main id='main'>
             <div className="main_header">
-                <h2>#blogDetail</h2>
+                <h2>#View</h2>
                 <p>상세 페이지입니다.</p>
             </div>
             <div className='main_contents container'>
@@ -26,8 +27,7 @@ export default async function page({ params }) {
                 <p>{data.desc}</p>
                 <p>{data.views}</p>
                 <p>{data.userEmail}</p>
-                <p>{data.userEmail}</p>
-                <p><Image src={data.user.image} alt="dd" width={100} height={100} /></p>
+                {data.user.image && <p><Image src={data.user.image} alt="dd" width={100} height={100} /></p>}
                 <Comments slug={slug} />
             </div>
         </main>

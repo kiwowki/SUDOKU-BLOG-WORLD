@@ -1,6 +1,6 @@
 "use client"
 import Menu from '@/components/menu/Menu'
-import React, { useMemo, useState } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 import ReactQuill from "react-quill";
 import 'react-quill/dist/quill.snow.css';
 
@@ -58,26 +58,31 @@ export default function page() {
       </section>
       <section className='main_conts'>
         <div className='blog_write container'>
-          <input type='text' placeholder='제목' onChange={(e) => setTitle(e.target.value)} />
-          <select onChange={(e) => setCateSlug(e.target.value)}>
-            <option value="easy">easy</option>
-            <option value="nomal">nomal</option>
-            <option value="difficult">difficult</option>
-            <option value="very_difficult">very difficult</option>
-            <option value="skills">skills</option>
-          </select>
-          <input type='file' onChange={(e) => setFile(e.target.files[0])}></input>
+          <div className='write_top'>
+            <input className="title" type='text' placeholder='제목' onChange={(e) => setTitle(e.target.value)} />
+            <select type="" onChange={(e) => setCateSlug(e.target.value)}>
+              <option value="easy">easy</option>
+              <option value="nomal">nomal</option>
+              <option value="difficult">difficult</option>
+              <option value="very_difficult">very difficult</option>
+              <option value="skills">skills</option>
+            </select>
+            <input type='file' onChange={(e) => setFile(e.target.files[0])}></input>
+          </div>
+
           <ReactQuill
-            // style={{ width: "800px", height: "100px" }}
             value={desc}
             onChange={setDesc}
             theme="snow"
             modules={modules}
             placeholder="글을 작성해주세요"
           />
-        <button onClick={() => handleSubmit()}>저장하기</button>
+          <div className='write_bot'>
+            <button onClick={() => handleSubmit()}><img src='/img/heart.png' style={{ width: "1rem" }} />SUBMIT</button>
+          </div>
         </div>
       </section>
     </main>
   )
 }
+

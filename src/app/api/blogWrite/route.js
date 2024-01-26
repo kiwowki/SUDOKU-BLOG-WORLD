@@ -17,8 +17,12 @@ export const POST = async (req) => {
 
     try {
         const body = await req.json(); // body 가져오기
+        const modifiedBody = {
+            ...body,
+            desc: body.desc.replace(/<p>/g, "").replace(/<\/p>/g, ""),
+        };
         const blogPost = await prisma.BlogPost.create({
-            data: { ...body, userEmail: session.user.email }
+            data: { ...modifiedBody, userEmail: session.user.email },
         })
         return new NextResponse(
             JSON.stringify(blogPost, { status: 200 })

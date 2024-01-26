@@ -1,5 +1,7 @@
 ## 나만의 next-blog 만들기(sudoku world)
 
+** 주의! ORM(prisma) 켜고 글 작성하기 **
+
 ### 초기세팅
 
 ```
@@ -18,7 +20,7 @@ npm install react-quill
 npm install swr
 ```
 
-app > api 폴더(서버단) = 회원가입(auth),  블로그 포스트, 카테고리, 댓글, 게시판
+app > api 폴더(서버단) = 회원가입(auth), 블로그 포스트, 카테고리, 댓글, 게시판
 app 폴더 = page
 context = 리덕스
 provider = 전체 관리(auth provider, theme provider)
@@ -38,7 +40,10 @@ npx prisma studio                               //prisma 화면 켜기
 
 [prisma mongoDB 시작하기](https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/mongodb/creating-the-prisma-schema-typescript-mongodb)
 
-Prisma는 오픈 소스 데이터베이스 도구로서, 데이터베이스와 상호 작용하고 쿼리를 작성하는 데 도움을 주는 도구입니다. Prisma는 데이터베이스 스키마를 사용하여 타입 세이프한 쿼리를 작성할 수 있도록 지원하며, TypeScript나 JavaScript에서 사용할 수 있습니다. 주로 Node.js 환경에서 백엔드 개발에 많이 사용됩니다.
+Prisma는 오픈 소스 데이터베이스, ORM(Object-Relational Mapping) 도구로서, 데이터베이스와 상호 작용하고 쿼리를 작성하는 데 도움을 주는 도구입니다. Prisma는 데이터베이스 스키마를 사용하여 타입 세이프한 쿼리를 작성할 수 있도록 지원하며, TypeScript나 JavaScript에서 사용할 수 있습니다. 주로 Node.js 환경에서 백엔드 개발에 많이 사용됩니다.
+
+Prisma를 사용하지 않고 작업할 경우, 데이터베이스와의 연결 및 쿼리 작성에 대한 도움을 받지 못하게 됩니다.
+따라서 Prisma 없이 작업하면 일부 기능이 작동하지 않을 수 있으며, 데이터베이스와의 싱크가 맞지 않아 글이 제대로 나오지 않을 수 있습니다. Prisma를 사용하지 않을 경우에는 직접 데이터베이스에 접근하여 CRUD(Create, Read, Update, Delete) 작업을 수행해야 합니다.
 
 -   Prisma Studio:
 
@@ -192,16 +197,19 @@ export const authOptions = {
 ```
 
 ### 카테고리 만들기
+
 SEO - Slug를 이용하기()
 
 components > category > category.jsx
 page.js에 추가
 
-
-
-
-
 ## 트러블 슈팅
+
+### front error
+
+-   select, option 마우스오버 했을 때 기본 배경색 변경하기
+
+### server error
 
 -   Unhandled Runtime Error 에러
 
@@ -247,4 +255,4 @@ Warning: Expected server HTML to contain a matching <h1> in <a>.
 See more info here: https://nextjs.org/docs/messages/react-hydration-error
 ```
 
-해결방법: 앱권한신청 > 동의항목 > 
+해결방법: 앱권한신청 > 동의항목 >

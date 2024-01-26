@@ -5,7 +5,8 @@ import { NextResponse } from "next/server"; // req, res 대신 사용
 export const GET = async () => {
     try {
         const categories = await prisma.category.findMany();
-
+        
+       
         return new NextResponse(
             // 데이터 넣어주기
             JSON.stringify(categories, { status: 200 })

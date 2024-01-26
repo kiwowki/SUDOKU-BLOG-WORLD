@@ -8,7 +8,7 @@ const getData = async () => {
     if (!res.ok) {
         throw new Error("실패!!! 다시 해보세요!");
     }
-
+    console.log(res)
     return res.json();
 };
 

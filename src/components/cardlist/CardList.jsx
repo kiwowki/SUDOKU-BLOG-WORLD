@@ -26,12 +26,17 @@ const CardList = async () => {
     const data = await getData();
 
     if (data.length === 0) {
-        return <div>No data available</div>;
+        return (
+            <div className="no_post">
+                <p>포스터가 없습니다. 새 글을 조금만 기다려주세요!</p>
+                <img src="/img/sans.png" alt="와! 샌즈!" />
+            </div>
+        );
     }
 
     return (
         <section className="card_list">
-            {data.map((item) => (
+            {data.reverse().map((item) => (
                 <Card item={item} key={item.id} />
             ))}
         </section>
